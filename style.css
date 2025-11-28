@@ -1,0 +1,65 @@
+.digital-watch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* Professional dark navy gradient */
+  background: linear-gradient(135deg, #0d1b2a, #1b263b, #415a77);
+  /* Warm amber/gold accent - elegant & premium */
+  color: #f4d35e;
+  font-family: "Orbitron", sans-serif;
+  border-radius: 20px;
+  padding: 40px 60px;
+  /* Subtle gold glow - less aggressive */
+  box-shadow: 0 0 20px rgba(244, 211, 94, 0.3), 0 0 40px rgba(244, 211, 94, 0.1) inset;
+  text-align: center;
+  min-width: 250px;
+  max-width: 50%;
+  margin: 200px auto;
+}
+
+.digital-watch .time {
+  font-size: 3rem;
+  letter-spacing: 3px;
+  font-weight: 700;
+  /* Softer text shadow */
+  text-shadow: 0 0 8px rgba(244, 211, 94, 0.6), 0 0 15px rgba(244, 211, 94, 0.3);
+}
+
+.digital-watch .date {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  /* Subtle date glow */
+  text-shadow: 0 0 4px rgba(244, 211, 94, 0.4);
+}
+
+.digital-watch:hover {
+  /* Refined hover effect */
+  box-shadow: 0 0 30px rgba(244, 211, 94, 0.4), 0 0 60px rgba(244, 211, 94, 0.15) inset;
+  transition: 0.3s;
+}
+
+
+
+/* animational kaj */
+.main{
+    margin:  0 auto;
+    max-width: 85%;
+    display: flex;
+    gap:30px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b5cefc;
+    padding: 50px;
+    border-radius: 20px;
+    margin-bottom: 200px;
+}
+#content-text, #content-img{
+width: 50%;
+}
+
+#content-img img{
+    width: 100%;
+    border-radius: 20px;
+}

@@ -6,7 +6,7 @@
   /* Professional dark navy gradient */
   background: linear-gradient(135deg, #0d1b2a, #1b263b, #415a77);
   /* Warm amber/gold accent - elegant & premium */
-  color: #f4d35e;
+  color: #e0f142;
   font-family: "Orbitron", sans-serif;
   border-radius: 20px;
   padding: 40px 60px;
@@ -36,7 +36,7 @@
 
 .digital-watch:hover {
   /* Refined hover effect */
-  box-shadow: 0 0 30px rgba(244, 211, 94, 0.4), 0 0 60px rgba(244, 211, 94, 0.15) inset;
+  box-shadow: 0 0 30px rgba(20, 16, 75, 0.884), 0 0 60px rgba(244, 211, 94, 0.15) inset;
   transition: 0.3s;
 }
 
@@ -53,13 +53,73 @@
     background-color: #b5cefc;
     padding: 50px;
     border-radius: 20px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 #content-text, #content-img{
 width: 50%;
+}
+#content-text p{
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: justify;
+font-family: "Poppins", sans-serif;
 }
 
 #content-img img{
     width: 100%;
     border-radius: 20px;
+}
+
+
+/* সাধারণ ডেস্কটপ */
+@media (max-width: 1200px) {
+
+}
+
+/* ছোট ল্যাপটপ */
+@media (max-width: 992px) {
+
+}
+
+/* ট্যাবলেট */
+@media (max-width: 768px) {
+  .main{
+    flex-direction: column;
+  }
+#content-text, #content-img{
+width:80%;
+}
+.digital-watch .time{
+  font-size: 2rem;
+}
+}
+
+/* মোবাইল সব */
+@media (max-width: 576px) {
+  #content-text, #content-img{
+width: 95%;
+}
+#content-text p{
+  font-size: 14 px;
+}
+}
+
+/* বড় ফোন */
+@media (max-width: 425px) {
+.digital-watch{
+   min-width: 200px;
+}
+}
+
+/* ছোট ফোন */
+@media (max-width: 375px) {
+
+}
+
+/* খুব ছোট ফোন */
+@media (max-width: 320px) {
+  .digital-watch{
+   min-width: 100px;
+}
 }

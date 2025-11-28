@@ -1,43 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <link rel="stylesheet" href="style.css">
-        <script defer src="script.js"></script>
-        
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-
-</head>
-
-<body>
-   
-
-<div class="digital-watch">
-  <div class="time" id="displayTime" >00:00:00</div>
-  <div class="date" id="displayDate" >Sunday, January 1</div>
-</div>
-
-
-<div class="main">
-    <div id="content-text" data-aos="fade-right" data-aos-duration="1200">
-        <p>সময় নদীর মতো বয়ে চলে, থামিয়ে রাখা যায় না। প্রতিটি মুহূর্ত অমূল্য, প্রতিটি নিঃশ্বাস স্মৃতির মতো। আমরা কখনো তা বুঝি না, যতক্ষণ না তা চলে যায়। তাই প্রতিটি দিনকে ভালোবাসা দিয়ে কাটাও, ছোট ছোট আনন্দকে উপভোগ করো। সময়ই জীবনের আসল ধন।</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SimpleCalculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="claculatorBody">
+      <table>
+        <tr>
+          <td colspan="4"><input type="text" id="myResult" /></td>
+          <p
+            style="
+              margin-left: 20px;
+              padding-top: 10px;
+              color: rgb(255, 149, 9);
+              font-weight: bold;
+            "
+          >
+            CASIO CLASSIC
+          </p>
+        </tr>
+        <tr>
+          <td><input type="button" value="C" onclick="deleteMe('c')" /></td>
+          <td><input type="button" value="(" onclick="calculator('(')" /></td>
+          <td><input type="button" value=")" onclick="calculator(')')" /></td>
+          <td><input type="button" value="x" onclick="singleReomve('x')" /></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="7" onclick="calculator('7')" /></td>
+          <td><input type="button" value="8" onclick="calculator('8')" /></td>
+          <td><input type="button" value="9" onclick="calculator('9')" /></td>
+          <td><input type="button" value="+" onclick="calculator('+')" /></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="4" onclick="calculator('4')" /></td>
+          <td><input type="button" value="5" onclick="calculator('5')" /></td>
+          <td><input type="button" value="6" onclick="calculator('6')" /></td>
+          <td><input type="button" value="-" onclick="calculator('-')" /></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="1" onclick="calculator('1')" /></td>
+          <td><input type="button" value="2" onclick="calculator('2')" /></td>
+          <td><input type="button" value="3" onclick="calculator('3')" /></td>
+          <td><input type="button" value="*" onclick="calculator('*')" /></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="0" onclick="calculator('0')" /></td>
+          <td><input type="button" value="." onclick="calculator('.')" /></td>
+          <td><input type="button" value="/" onclick="calculator('/')" /></td>
+          <td><input type="button" value="=" onclick="Answer()" /></td>
+        </tr>
+      </table>
     </div>
-    <div id="content-img" data-aos="fade-left" data-aos-duration="1200"> 
-        <img src="https://images.unsplash.com/photo-1501139083538-0139583c060f?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="img">
-    </div>
-</div>
-
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1200,
-            once: false
-        });
-    </script>
-
-</body>
+  </body>
 </html>

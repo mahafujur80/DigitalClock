@@ -1,65 +1,82 @@
-.digital-watch {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  /* Professional dark navy gradient */
-  background: linear-gradient(135deg, #0d1b2a, #1b263b, #415a77);
-  /* Warm amber/gold accent - elegant & premium */
-  color: #f4d35e;
-  font-family: "Orbitron", sans-serif;
-  border-radius: 20px;
-  padding: 40px 60px;
-  /* Subtle gold glow - less aggressive */
-  box-shadow: 0 0 20px rgba(244, 211, 94, 0.3), 0 0 40px rgba(244, 211, 94, 0.1) inset;
-  text-align: center;
-  min-width: 250px;
-  max-width: 50%;
-  margin: 200px auto;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.digital-watch .time {
-  font-size: 3rem;
-  letter-spacing: 3px;
-  font-weight: 700;
-  /* Softer text shadow */
-  text-shadow: 0 0 8px rgba(244, 211, 94, 0.6), 0 0 15px rgba(244, 211, 94, 0.3);
+body {
+    background-color: bisque;
 }
 
-.digital-watch .date {
-  margin-top: 10px;
-  font-size: 1.2rem;
-  letter-spacing: 1px;
-  /* Subtle date glow */
-  text-shadow: 0 0 4px rgba(244, 211, 94, 0.4);
+.claculatorBody {
+    width: 300px;
+    min-height: 450px;
+    margin: 50px auto;
+    border: 2px solid rgb(33, 187, 192);
+    border-radius: 10px;
+    background-color: rgba(71, 71, 70, 0.918);
 }
 
-.digital-watch:hover {
-  /* Refined hover effect */
-  box-shadow: 0 0 30px rgba(244, 211, 94, 0.4), 0 0 60px rgba(244, 211, 94, 0.15) inset;
-  transition: 0.3s;
-}
-
-
-
-/* animational kaj */
-.main{
-    margin:  0 auto;
-    max-width: 85%;
-    display: flex;
-    gap:30px;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #b5cefc;
-    padding: 50px;
-    border-radius: 20px;
-    margin-bottom: 200px;
-}
-#content-text, #content-img{
-width: 50%;
-}
-
-#content-img img{
+#myResult {
+    background-color: rgb(175, 240, 207);
+    color: rgba(37, 36, 36, 0.945);
+    padding: 15px;
     width: 100%;
-    border-radius: 20px;
+    font-size: 25px;
+    outline: none;
+    border: 5px solid rgba(97, 101, 160, 0.534);
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+table {
+    padding: 10px;
+}
+
+input[type="button"] {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    gap: 5px;
+    width: 65px;
+    height: 55px;
+    font-size: 18px;
+    font-weight: 550;
+    background-color: rgb(42, 171, 223);
+    box-shadow: 2px 2px 5px black;
+}
+
+input[type="button"]:hover {
+    background-color: rgb(6, 132, 182);
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width:768px) {
+    .claculatorBody {
+        min-height: 95vh;
+        width: 400px;
+    }
+
+    input[type="button"] {
+        margin-bottom: 20px;
+    }
+
+    table {
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .claculatorBody {
+        min-height: 90vh;
+        width: 100%;
+    }
+
+    input[type="button"] {
+        max-width: 65px;
+        height: 70px;
+        font-size: 18px;
+    }
 }
